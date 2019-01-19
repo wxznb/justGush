@@ -1,0 +1,28 @@
+{
+  "name": "justGush",
+  "version": "1.0.0",
+  "description": "justGush font-end",
+  "main": "index.js",
+  "script": {
+    "dev": "",
+    "build": "",
+    "start": ""
+  },
+  "repository": "git@github.com:wxznb/justGush.git",
+  "author": "sarusama <ld839183343@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^2.1.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "redux": "^4.0.1",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.28.4"
+  }
+}
