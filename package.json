@@ -2,7 +2,7 @@
   "name": "justGush",
   "version": "1.0.0",
   "description": "justGush font-end",
-  "main": "index.js",
+  "main": "index.html",
   "script": {
     "dev": "",
     "build": "",
