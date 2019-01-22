@@ -3,26 +3,31 @@
   "version": "1.0.0",
   "description": "justGush font-end",
   "main": "index.html",
-  "script": {
-    "dev": "",
-    "build": "",
-    "start": ""
+  "scripts": {
+    "dev": "webpack --config build/webpack.dev.conf.js",
+    "build": "webpack --mode production",
+    "start": "webpack --config ./build/webpack.dev.conf.js"
   },
   "repository": "git@github.com:wxznb/justGush.git",
   "author": "sarusama <ld839183343@163.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
     "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "style-loader": "^0.23.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^8.0.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "webpack": "^4.28.4"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.0",
+    "@babel/preset-react": "^7.0.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-merge": "^4.2.1"
   }
 }

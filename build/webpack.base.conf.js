@@ -10,15 +10,15 @@ var publicPath = isProduction ?
                     config.pro.publicPath :
                     config.dev.publicPath;
 
-const mainPath = resolve("./src");
+const mainPath = path.resolve(__dirname, "../src");
 
 module.exports = {
-    content: path.resolve(__dirname, ""),
+    // content: path.resolve(__dirname, ""),
     entry: {
-        app: ""
+        app: path.resolve(__dirname, "../src/index.js")
     },
     output: {
-        path: "",
+        path: path.resolve(__dirname, "../dist"),
         filename: "[name].js",
         publicPath
     },
@@ -26,15 +26,15 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx)$/,
             use: {
-                loader: "babel-loader"
+                loader: "babel-loader",
+                options: {
+                    presets: [
+                        "@babel/preset-env",
+                        "@babel/preset-react"
+                    ]
+                }
             },
-            preset: [
-                "env",
-                "react"
-            ],
-            include: [
-                mainPath
-            ]
+            exclude: /node_modules/
         }, {
             test: /\.css$/,
             use: [
