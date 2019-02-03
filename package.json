@@ -4,9 +4,9 @@
   "description": "justGush font-end",
   "main": "index.html",
   "scripts": {
-    "dev": "webpack --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "build": "webpack --mode production",
-    "start": "webpack --config ./build/webpack.dev.conf.js"
+    "start": "webpack-dev-server --config build/webpack.dev.conf.js"
   },
   "repository": "git@github.com:wxznb/justGush.git",
   "author": "sarusama <ld839183343@163.com>",
@@ -14,9 +14,11 @@
   "dependencies": {
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "history": "^4.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
@@ -28,6 +30,7 @@
     "@babel/preset-react": "^7.0.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
   }
 }
