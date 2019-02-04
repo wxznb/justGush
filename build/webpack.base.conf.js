@@ -12,6 +12,10 @@ var publicPath = isProduction ?
 
 const mainPath = path.resolve(__dirname, "../src");
 
+let resolve = function (dir) {
+    return path.join(__dirname, "..", dir);
+};
+
 module.exports = {
     // content: path.resolve(__dirname, ""),
     entry: {
@@ -21,6 +25,11 @@ module.exports = {
         path: path.resolve(__dirname, "../dist"),
         filename: "[name].js",
         publicPath
+    },
+    resolve: {
+        alias: {
+            "@": resolve("src")
+        }
     },
     module: {
         rules: [{

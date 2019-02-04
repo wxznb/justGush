@@ -1,7 +1,7 @@
 import {
     exampleAction
-} from "Example";
+} from "./Example";
 
-export default {
+export {
     exampleAction
 };

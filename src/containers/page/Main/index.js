@@ -1,7 +1,6 @@
-import React from "react";
-const {
+import React, {
     Component
-} = React;
+} from "react";
 
 class Main extends Component {
     render () {

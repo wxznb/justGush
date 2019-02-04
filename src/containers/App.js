@@ -18,7 +18,7 @@ const Routes = () => <Router
     }>
         <div>
             <Route 
-                path = "/"
+                path = "*"
                 component = {
                     Main
                 }/>
