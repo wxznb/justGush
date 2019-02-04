@@ -11,6 +11,7 @@ import {
     Home,
     Main
 } from "./page";
+import "./App.css";
 
 const Routes = () => <Router
     history = {
